@@ -6,6 +6,12 @@
     margin: 0px;
     color: rgb(56, 56, 56);
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+*::selection{
+    background-color: #77dd77;
+    color: rgb(56, 56, 56);
 }
 
 nav{
@@ -45,6 +51,30 @@ nav{
     display: none;
 }
 
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.section{
+    margin-top: 2rem;
+}
+
+.heading{
+    font-size: 1.5rem;
+}
+
+.section-content{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.contacts{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
 
 @media only screen and (max-width: 600px) {
     .nav{
@@ -82,5 +112,30 @@ nav{
     .full-width{
         height: 80vh!important;
         transition: 0.5s;
+    }
+
+    .container{
+        width: 90%;
+    }
+    
+    .section{
+        margin-top: 1rem;
+    }
+    
+    .heading{
+        font-size: 1.5rem;
+    }
+    
+    .section-content{
+        margin-left: 0.1rem;
+    }
+
+    .contacts{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .contact-card{
+        margin-bottom: 1rem;
     }
 }
